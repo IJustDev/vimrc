@@ -5,9 +5,11 @@ echo 'Installing Awesome Vim from '$1
 cd $1
 
 VIMRC="set runtimepath+=$1
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim_runtime/my_plugins/Vundle.vim
 
 source $1/vimrcs/basic.vim
 source $1/vimrcs/filetypes.vim
+source $1/vimrcs/load_plugins.vim
 source $1/vimrcs/plugins_config.vim
 source $1/vimrcs/extended.vim
 
